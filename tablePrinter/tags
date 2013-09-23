@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddColumn	table_printer.cpp	/^void TablePrinter::AddColumn(const std::string & header_name, int column_width){$/;"	f	class:TablePrinter
+PrintFooter	table_printer.cpp	/^void TablePrinter::PrintFooter(){$/;"	f	class:TablePrinter
+PrintHeader	table_printer.cpp	/^void TablePrinter::PrintHeader(){$/;"	f	class:TablePrinter
+PrintHorizontalLine	table_printer.cpp	/^void TablePrinter::PrintHorizontalLine() {$/;"	f	class:TablePrinter
+TablePrinter	table_printer.cpp	/^TablePrinter::TablePrinter(std::ostream * output, const std::string & separator){$/;"	f	class:TablePrinter
+TablePrinter	table_printer.h	/^class TablePrinter{$/;"	c
+column_headers_	table_printer.h	/^  std::vector<std::string> column_headers_;$/;"	m	class:TablePrinter
+column_widths_	table_printer.h	/^  std::vector<int> column_widths_;$/;"	m	class:TablePrinter
+endl	table_printer.h	/^class endl{};$/;"	c
+get_num_columns	table_printer.cpp	/^int TablePrinter::get_num_columns() const {$/;"	f	class:TablePrinter
+get_table_width	table_printer.cpp	/^int TablePrinter::get_table_width() const {$/;"	f	class:TablePrinter
+i_	table_printer.h	/^  int i_; \/\/ index of current row$/;"	m	class:TablePrinter
+j_	table_printer.h	/^  int j_; \/\/ index of current column$/;"	m	class:TablePrinter
+main	main.cpp	/^int main()$/;"	f
+operator <<	table_printer.cpp	/^TablePrinter& TablePrinter::operator<<(double input){$/;"	f	class:TablePrinter
+operator <<	table_printer.cpp	/^TablePrinter& TablePrinter::operator<<(float input){$/;"	f	class:TablePrinter
+operator <<	table_printer.h	/^  TablePrinter& operator<<(endl input){$/;"	f	class:TablePrinter
+operator <<	table_printer.h	/^  template<typename T> TablePrinter& operator<<(T input){$/;"	f	class:TablePrinter
+out_stream_	table_printer.h	/^  std::ostream * out_stream_;$/;"	m	class:TablePrinter
+separator_	table_printer.h	/^  std::string separator_;$/;"	m	class:TablePrinter
+set_separator	table_printer.cpp	/^void TablePrinter::set_separator(const std::string &separator){$/;"	f	class:TablePrinter
+table_width_	table_printer.h	/^  int table_width_;$/;"	m	class:TablePrinter
+~TablePrinter	table_printer.cpp	/^TablePrinter::~TablePrinter(){$/;"	f	class:TablePrinter
