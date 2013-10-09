@@ -21,16 +21,22 @@ end
 local file = 'myfile.txt'
 local lines = lines_from(file)
 local i = 1
+
+firstColword = {}    
 -- print all line numbers and their contents
 for k,v in pairs(lines) do
-  print('line[' .. k .. ']', v)
-      
+--  print('line[' .. k .. ']', v)
   words = {}
   for word in lines[i]:gmatch("%w+") do table.insert(words,word) end
   i = i+1 
   for k,v in pairs(words) do
-    print('words[' .. k .. ']', v)
+--    print('words[' .. k .. ']', v)
+    if k==1 then
+      table.insert(firstColword,v)
+    end
   end
 end
+--print first words in each line.
+for i=1,#firstColword do print (firstColword[i]) end
 
 
