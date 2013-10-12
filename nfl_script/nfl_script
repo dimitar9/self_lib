@@ -1,0 +1,19 @@
+
+1. delete PM, TV, lines
+
+$ sed -i '/\PM/d' input 
+$ sed -i '/\TV/d' input
+
+2. delete Picks word, not delete that line coz there is date in same line
+$sed 's/Picks//g'  input
+
+3. replace  ½ with .5
+
+$sed -i 's/½/\.5/g' input
+
+4. deal with PK, chagne PK to -0.0001.
+sed -i 's/PK/\-0.0001/g' input
+
+
+5. replace u with space
+sed -i 's/u/\ /g' input
