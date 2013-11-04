@@ -23,8 +23,11 @@ typedef WidgetManager<OpNewCreator> MyWidgetMgr;
 
 int main ()
 {
-    MyWidgetMgr mywm ;    
-    mywm.Create();
+    MyWidgetMgr* mywm = new MyWidgetMgr();    
+    mywm->Create();
+
+    MyWidgetMgr mywm2;
+    mywm2.Create();
     return 0;
 }
 
