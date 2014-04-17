@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
     memset(&receivesocket, 0, sizeof(receivesocket)); 
     receivesocket.sin_family = AF_INET; 
     receivesocket.sin_addr.s_addr = htonl(INADDR_ANY);
-    receivesocket.sin_port = htons(2905);
+    receivesocket.sin_port = htons(22905);
 
     receivelen = sizeof(receivesocket);
 
@@ -52,8 +52,8 @@ int main(int argc, char *argv[]) {
     /* kernel address */
     memset(&sendsocket, 0, sizeof(sendsocket));
     sendsocket.sin_family = AF_INET;
-    sendsocket.sin_addr.s_addr = inet_addr("10.12.7.95");
-    sendsocket.sin_port = htons(2905);
+    sendsocket.sin_addr.s_addr = inet_addr("127.0.0.1");
+    sendsocket.sin_port = htons(22905);
 
    do
     {

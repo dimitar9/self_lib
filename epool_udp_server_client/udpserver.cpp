@@ -140,7 +140,7 @@ int main()
   memset(&receivesocket, 0, sizeof(receivesocket));
   receivesocket.sin_family = AF_INET;
   receivesocket.sin_addr.s_addr = htonl(INADDR_ANY);
-  receivesocket.sin_port = htons(2905);
+  receivesocket.sin_port = htons(22905);
 
   receivelen = sizeof(receivesocket);
 
